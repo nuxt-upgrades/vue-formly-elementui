@@ -1,4 +1,5 @@
-import errorDisplay from '@/components/bootstrap-formly/components/errorDisplay';
+import errorDisplay from '@/formly/components/errorDisplay';
+
 
 export default
 {

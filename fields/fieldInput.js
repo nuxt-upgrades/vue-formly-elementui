@@ -5,19 +5,10 @@ export default {
     const children = [];
     const self = this;
 
-    // add the label if it needs it
-    if (this.to.label) {
-      children.push(
-        h('label', {
-          attrs: {
-            for: this.to.id,
-          },
-        }, this.to.label),
-      );
-    }
+   
     // add the input
     children.push(
-      h('input', {
+      h('el-input', {
         attrs: {
           id: this.to.id,
           type: this.to.inputType || 'text',
@@ -54,7 +45,24 @@ export default {
         },
       }),
     );
-    return h('div', {
+
+
+     // add the label if it needs it
+    // if (this.to.label) {
+    //   children.push(
+    //     h('el-form-item', {
+    //       attrs: {
+    //         label: this.to.label,
+    //         for: this.to.id,
+    //       },
+    //     }),
+    //   );
+    // }
+    return h('el-form-item', {
+      attrs: {
+            label: this.to.label,
+            for: this.to.id,
+      },
       class: [
         'form-group formly-input',
         this.to.inputType,
