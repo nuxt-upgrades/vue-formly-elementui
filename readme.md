@@ -2,6 +2,6 @@
 
 ```js
 cd your-nuxt-project
-gitclone https://github.com/nuxt-upgrades/apolo-starter.git formly
+gitclone https://github.com/nuxt-upgrades/vue-formly-elementui.git formly
 npm i ...
 ```
