@@ -1,0 +1,7 @@
+{
+	"name": "@dadmor/vue-formly-elementui",
+	"version": "0.0.1",
+	"description": "elementui wrapper on vue formly",
+	"license": "MIT",
+	"repository": "nuxt-upgrades/apolo-starter"
+}
